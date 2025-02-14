@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kochasiowe Gody</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Etap 1: Ekran startowy -->
+    <div id="main-screen">
+        <h1>KOHASIOWE GODY</h1>
+        <p>Naciśnij środek ekranu</p>
+    </div>
+
+    <!-- Etap 2: Powiększanie zdjęcia -->
+    <div id="image-container" class="hidden">
+        <img id="main-image" src="image.jpg" alt="Kochasiowe Gody">
+    </div>
+
+    <!-- Etap 3: Particles (serduszka) -->
+    <div id="particles-js" class="hidden"></div>
+
+    <!-- Etap 4: Pytania -->
+    <div id="question-box" class="hidden">
+        <div class="question-header">
+            <p>Pytanie</p>
+        </div>
+        <div class="question-body">
+            <input type="text" id="answer-input" placeholder="Wpisz odpowiedź">
+        </div>
+    </div>
+
+    <!-- Etap 5: Certyfikat -->
+    <div id="certificate" class="hidden">
+        <h2>CERTYFIKAT KOCHASIA</h2>
+        <p>Data: 14.02.2025</p>
+        <p>Miejsce: Bebowice</p>
+        <p>Gratulacje! Właśnie zostałaś certyfikowanym kochasiem. Zdobyłaś wynik <span id="score">X</span>%.</p>
+        <p>Podpis: ........................</p>
+        <p>ANANAS</p>
+    </div>
+
+    <script src="particles.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
